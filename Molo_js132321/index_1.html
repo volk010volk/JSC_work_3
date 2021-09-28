@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n, str = "";
+        // n = +prompt ("Задача 1.\nВведите число:");
+        // for (i = 2; i <= n; i++)
+        //     if (i % 2 == 0) 
+        //         str += String(i) + " ";
+        // alert (str);
+        // str = "";
+
+        
+        // n = +prompt ("Задача 2.\nВведите число:");
+        // for(i = n; i >= 1; i--)
+        //     if (i % 2 != 0)
+        //         str += String(i) + " ";
+        // alert (str);
+        // str = "";
+
+        // n = +prompt ("Задача 3.\nВведите число:");
+        // for (i = 1; i < n; i++)
+        //     if (n % i == 0)
+        //         str += String(i) + " ";
+        // alert (str);
+        // str = "";
+
+        // n = +prompt ("Задача 4.\nВведите величину годовой депозитной ставки:");
+        // var years = 0, money = 1000, resultMoney = money * 2;
+        // while (money < resultMoney){
+        //     money += money * n / 100;
+        //     years++;
+        // }
+        // alert ("Ваш вклад увеличиться в два раза за " + years + " лет.")
+
+        n = 0;
+        var rnd = 0;
+        while (n < 10){
+            rnd = Math.round (Math.random() * 19) + 1;
+            if (rnd  % 4 == 0)
+                continue;
+            str += rnd + " ";
+            n++;
+        }
+        alert("Задача 5.\n" + str);
+
+    </script>
+</body>
+</html>
